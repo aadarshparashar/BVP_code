@@ -46,4 +46,7 @@ void Mesh::calculateSurfaceLocation()
     }
 }
 
-void Mesh::refineMesh(){}
+void Mesh::refineMesh(){
+    // Add a mesh point at the middle of the mesh domain
+    
+}

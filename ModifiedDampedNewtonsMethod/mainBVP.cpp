@@ -19,6 +19,7 @@
 //g++ -I F:/TylerFiles/GitHubRepos/BVP_code/ModifiedDampedNewtonsMethod/toolsFolder/eigen3_3_9 mainBVP.cpp Mesh.cpp Residual.cpp -o BVP
 //g++ -I F:/TylerFiles/GitHubRepos/BVP_code/ModifiedDampedNewtonsMethod/toolsFolder/eigen3_3_9 mainBVP.cpp Mesh.cpp Residual.cpp BoundaryValueProblem.cpp  -o BVP
 //g++ -I F:/TylerFiles/GitHubRepos/BVP_code/ModifiedDampedNewtonsMethod/toolsFolder/eigen3_3_9 mainBVP.cpp BoundaryValueProblem.cpp Mesh.cpp Residual.cpp Jacobian.cpp -o BVP
+//g++ -I C:/MyStuff/Courses/Sem3/MEGN598A/BVP_code-main/BVP_code/ModifiedDampedNewtonsMethod/toolsFolder/eigen-3.4.0 mainBVP.cpp BoundaryValueProblem.cpp Mesh.cpp Residual.cpp Jacobian.cpp -o BVP
 
 //Used .\BVP.exe to actually run the executable in the terminal window
 
@@ -35,6 +36,7 @@ std::string componentName(int ind)
     {
         return "nT";
     }
+    return "error";
 }
 void writeSolution(int nPoints, int nVars, RowVectorXd grid, MatrixXd currentSV) 
 {
